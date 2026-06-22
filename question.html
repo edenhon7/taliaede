@@ -14,7 +14,7 @@ body{
     font-family:Arial,sans-serif;
 
     background:
-      linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+      linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
       url('photo.jpg');
 
     background-size:cover;
@@ -22,10 +22,16 @@ body{
 }
 
 .box{
-    background:white;
+    background:rgba(255,255,255,0.95);
     padding:40px;
     border-radius:20px;
     text-align:center;
+    max-width:500px;
+}
+
+h1{
+    margin-bottom:25px;
+    color:#d63384;
 }
 
 button{
@@ -35,6 +41,11 @@ button{
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.05);
 }
 
 .yes{
@@ -54,12 +65,12 @@ button{
     <h1>Can we give it another go? ❤️</h1>
 
     <button class="yes"
-        onclick="alert('You just made me the happiest man alive ❤️')">
-        Yes
+        onclick="window.location.href='yes.html'">
+        Yes ❤️
     </button>
 
     <button class="no"
-        onclick="alert('I understand. Thank you for reading everything ❤️')">
+        onclick="window.location.href='no.html'">
         No
     </button>
 </div>
